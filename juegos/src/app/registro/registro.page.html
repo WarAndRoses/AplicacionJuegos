@@ -1,0 +1,26 @@
+<!-- filepath: /c:/Users/War/Desktop/AplicacionJuegos/juegos/src/app/registro/registro.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <ion-list>
+      <ion-item>
+        <ion-input [(ngModel)]="username" label="Nombre de usuario" placeholder="Ingrese usuario" label-placement="floating" fill="outline"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="email" type="email" label="Correo electrónico" placeholder="Ingrese correo" label-placement="floating" fill="outline"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="password" type="password" label="Contraseña" placeholder="Ingrese contraseña" label-placement="floating" fill="outline"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input [(ngModel)]="confirmPassword" type="password" label="Confirmar contraseña" placeholder="Confirme contraseña" label-placement="floating" fill="outline"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button expand="block" color="primary" (click)="register()">Registrarse</ion-button>
+  </div>
+</ion-content>

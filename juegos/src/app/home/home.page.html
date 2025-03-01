@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">iNICIO</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-list>
+      <ion-item>
+        <ion-input label="Nombre de usuario" placeholder="Ingrese usuario" label-placement="floating" fill="outline"></ion-input>
+      </ion-item>
+      <br>
+      <ion-item>
+        <ion-input label="Contraseña" type="password" label-placement="floating" fill="outline" placeholder="Ingrese Contraseña"></ion-input>
+      </ion-item>
+    </ion-list>
+    <br>
+    <ion-button expand="block" color="primary" (click)="navigateToSeleccionJuegos()">Ingresar</ion-button>
+    <br>
+    <ion-button expand="block" color="secondary" (click)="navigateToRegistro()">Registrarse</ion-button>
+  </div>
+</ion-content>
